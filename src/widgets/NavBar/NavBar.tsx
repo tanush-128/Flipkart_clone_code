@@ -12,9 +12,9 @@ function NavBar() {
                 
                 <Link to={'/login'} id ='login'>Login</Link>
                 
-                <a href="https://www.google.com" id='seller'>Become a Seller</a>
+                <Link to={"/incomplete"} id='seller'>Become a Seller</Link>
                 
-                <a href="https://www.google.com">More</a>
+                <Link to={"/incomplete"}>More</Link>
                 
                 <Link to={'/cart'} id="cartdiv"><img src={cartImg} id='cart' /> Cart</Link>
                 

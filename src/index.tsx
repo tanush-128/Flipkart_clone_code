@@ -11,6 +11,7 @@ import './pages/cart/cartPage';
 import CartPage from './pages/cart/cartPage';
 import LoginPage from './pages/login/loginPage';
 import Footer from './widgets/footer/footer';
+import IncompletePage from './pages/incomple/incompletePage';
 // import  } from 'express';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
@@ -22,7 +23,7 @@ root.render(
     <Routes>
       <Route path="/login" element={<LoginPage/>} />
       <Route path="/" element={<App/>} />
-
+      <Route path="/incomplete" element={<IncompletePage/>} />
 
 
       <Route path="/products" element={<ProductList/>} />

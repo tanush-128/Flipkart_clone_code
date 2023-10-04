@@ -1,0 +1,34 @@
+.incomplete{
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.incompleteBody{
+    background-color: white;
+    margin: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 64px;
+}
+
+.heading{
+    font-size: 64px;
+    font-weight: 600;
+    text-align: center;
+}
+.para{
+    font-size: 32px;
+    text-align: center;
+}
+.links{
+    font-size: 24px;
+}
+.links a{
+    font-size: 20px;
+    color: #2874F0;
+    text-decoration: none;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import'./categoryList.css';
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 
  class Category {
     id: string;
@@ -46,15 +46,13 @@ function CategoriesList({ categories: []}) {
 function CategoryWidget({ category} : {category: Category}){
   
 
-  const [focused, setfocused] = useState(false);
+  
   return (
-    <div onMouseEnter={()=> setfocused(!focused)} onMouseLeave={()=> setfocused(!focused)}>
-    <a href='#' className="categoryItem" key={category.id}>   
-    <img src={category.imgUrl} alt='' /> {category.name} </a>
+    <div>
+    <Link to={"/incomplete"} className="categoryItem" key={category.id}>   
+    <img src={category.imgUrl} alt='' /> {category.name} </Link>
     
-    <div className='floatingMenu' id={'menu'+category.id} style={{display: focused?"block":"none"}}>
-     
-     </div>
+    
    </div>
   );
 }

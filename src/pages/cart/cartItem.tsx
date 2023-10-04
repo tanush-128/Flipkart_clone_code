@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import { Product } from "../../models/product";
 import './cartItem.css';
 function CartItem({product}: {product: Product}) {
+    const [quantity, setQuantity] = useState(1);
     return <div className="CartItem">
         <div className="CartItemLeft">
             <div>
@@ -23,11 +24,16 @@ function CartItem({product}: {product: Product}) {
         </div>
         <div className="CartItemRight">
         <div className="CartItemLeftDetailsQuantity">
-                    <button type="button">-</button>
+                    <button type="button"  onClick={()=> {
+                        if(quantity>0){
+                        setQuantity(quantity-1)
+                        }
+                        
+                        } }>-</button>
                     <div className="CartItemLeftDetailsQuantityValue">
-                        1
+                        {quantity}
                     </div>
-                    <button type="button">+</button>
+                    <button type="button" onClick={()=>{setQuantity(quantity+1)}} >+</button>
                 </div>
             <button type="button" className="TextButton">SAVE FOR LATER</button>
 

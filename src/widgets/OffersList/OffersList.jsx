@@ -18,62 +18,70 @@ new offer("o3","https://rukminim2.flixcart.com/fk-p-flap/3376/560/image/34ea3229
 
 function OffersList({offers})  {
 
-    var counter =1;
-    var noOfOffers = offers.length;
-    var screenWidth =  window.screen.width;
-    function handleLeftClick() {
-    var offersList = document.getElementById("offerList");
-      
-      counter--;
-      if(counter <1){
-        counter = noOfOffers;
-      }
-      offersList.style.transform = `translateX(-${screenWidth * (counter-1) }px)`;
-    
-  
-      console.log("left");
+   
+  function handleLeftClick() {
+    // const slider = document.querySelector('.product-list');
+    const slider = document.querySelector('.offers-list');
+    const direction = -1;
+    if (slider) {
+        const scrollAmount = slider.clientWidth * direction;
+        slider.scrollBy({
+          
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
     }
-    function handleRightClick() {
-    var offersList = document.getElementById("offerList");
+}
 
-      counter++;
-      if(counter >noOfOffers){
-        counter = 1;
-      }
-      offersList.style.transform =`translateX(-${screenWidth *( counter-1)}px)`;
-      console.log("right");
+function handleRightClick() {
+    const slider = document.querySelector('.offers-list');
+
+
+    const direction = 1;
+    if (slider) {
+        const scrollAmount = slider.clientWidth * direction;
+        slider.scrollBy({
+         
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
     }
-    console.log(screenWidth);
+}
 
   
  
   return (
     
-  <div className='banner'>
-    
-    <div className='controls'>
-    
-     <button  className='lr' id="left" onClick={handleLeftClick}><img src={right} /></button> 
-     <button  className='lr' id="right" onClick={handleRightClick} > <img src={right} /></button>  
-    
-    </div>
-   
-    <div className='offers'>
-     
-     <div className='offersList' id='offerList'>
-      { 
-      offers.map(
+
+     <div className='category-display'>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+            <div className='container'>
+                <div className='slider-wrapper'>
+                    <button id="prev-slide" className="slide-button material-symbols-rounded" onClick={handleLeftClick}>
+                        chevron_left
+                    </button>
+                    <div className='offers-list'>
+                        {offers.map(
         (offer) => (
         <a href='#' className="offerItem" key={offer.id}> <img src={offer.imgUrl} className='offerImg' /> </a>
       )
-      )
-      } 
-    </div>
-    </div>
-    </div>
+      )}
+                    </div>
+                    <button id="next-slide" className="slide-button material-symbols-rounded" onClick={handleRightClick}>
+                        chevron_right
+                    </button>
+                </div>
+            </div>
+        </div>
+  
+   
+
 
   );
       
 }
+
+
+
 
 export  {OffersList, offers, offer};

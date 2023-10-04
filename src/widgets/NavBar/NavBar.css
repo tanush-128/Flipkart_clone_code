@@ -1,5 +1,5 @@
 .NavBar{
-    /* margin-left: 128px; */
+
     justify-content: space-evenly;
     background-color: #2874F0;
     align-items: center;
@@ -64,6 +64,6 @@
     height: 18px;
 }
 #seller{
-    flex: 1;
+    flex: 1.5;
     
 }
