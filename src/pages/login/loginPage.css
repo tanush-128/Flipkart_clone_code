@@ -1,0 +1,86 @@
+
+.LoginPage{
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.LoginPageLeft{
+    background-color: #2874F0;
+    width: 240px;
+    color: white;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.Login{
+    font-size: 24px;
+    font-weight: 500; 
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    
+
+}
+.LoginPageLeft p{
+    color: #dbdbdb;
+}
+
+.LoginPageLeft img{
+    margin-top: 120px;
+    width: 240px;
+}
+
+.LoginPageRight{
+    background-color: white;
+    width: 360px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.LoginPageRight input{
+    border: none;
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 16px;
+    padding: 4px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+.LoginPageRight input:focus{
+    outline: none;
+}
+.LoginPageRight button{
+    width: 100%;
+    border: none;
+    padding: 16px;
+    background-color: #FB641B;
+    color: white;
+}
+.LoginPageRight p{
+    margin-top: 16px;
+    font-size: 14px;
+    color: #878787;
+}
+
+.blue{
+    color: #2874F0;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.CreateAnAccount{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

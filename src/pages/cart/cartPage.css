@@ -1,0 +1,59 @@
+.CartPage{
+    padding-top: 80px;
+    margin: 0px 256px;
+    display: flex;
+    align-items: flex-start;     
+    justify-content: center;
+}
+.PriceDetails{
+    background-color: white;
+    margin-left: 32px;
+    padding: 16px;
+    border-radius: 4px;
+
+}
+.PriceDetailsItem div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 128px;
+}
+.PriceDetailsTitle{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #6e7679;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.CartItemsTotalAmount{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    padding-top: 4px; 
+    padding-bottom: 4px;
+   border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.green{
+    color:#419345;
+}
+.CartSavings{
+   font-weight: 500;
+}
+.CartAddress{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.CartAddress button{
+    background-color: transparent;
+    border: 1px solid  #6e7679;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #2874f0;
+}

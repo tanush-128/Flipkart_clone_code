@@ -1,0 +1,129 @@
+.productPageBody{
+
+  margin-left: 100px;
+   margin-right: 100px;
+   background-color: white;
+   display: flex;
+   padding : 72px 32px 32px 32px;
+   gap: 32px;
+}
+.productImage{
+    border: #b8b6b6 0.05px solid;
+    padding: 64px 32px;
+}
+.productPageName{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.productPagePrice{
+ 
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+}
+.ratings{
+    margin-bottom: 20px;
+}
+.productPrice{
+    font-size: 28px;
+    font-weight: 600;
+}
+.priceOff{
+    color: #388e3c;
+    font-size: 18px;
+    font-weight: 600;
+}
+.productImageSmall{
+    width: 64px;
+}
+.productPageLeft{
+    position: fixed;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(6fr);
+    grid-template-rows: repeat(6fr);
+   
+
+}
+.productImages{
+    grid-row: 1/7;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-right: 32px;
+    height: 480px;
+    overflow-y: scroll;
+
+}
+.productImageSmall{
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    padding: 8px;
+    border: #b8b6b6 0.005px solid; ;
+}
+.productImage{
+    width: 400px;
+    grid-row: 1/6;
+    grid-column: 2/6;
+}
+
+.buttons{
+    grid-column: 2/7;
+   grid-row: 6/7;
+    display: flex;
+    justify-content: stretch;
+
+
+}
+.buttons button{
+    flex: 1;
+    padding: 16px 32px;
+    font-size: 20px;
+    font-variant-caps: all-petite-caps;
+    border: none;
+    color: white;
+    margin: 4px;
+}
+.buttons button:nth-child(1){
+    background-color: #FF9F00;
+}
+.buttons button:nth-child(2){
+    background-color: #FB641B;
+}
+.productPageBankOffers ul{
+    /* font-size: ; */
+   
+    
+}
+.productPageDescription{
+    display: flex;
+}
+.title{
+    color: #878787;
+}
+.details{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.details ul{
+   font-size: 14px;
+   font-weight: 400;
+
+}
+.details ul li{
+    margin-bottom: 8px;
+}
+.productPageProductDesc{
+    padding: 8px;
+    font-size: 14px;
+}
+.productPageRight{
+    /* height: 1400px; */
+    margin-left: 620px;
+    height: 86svh;
+}

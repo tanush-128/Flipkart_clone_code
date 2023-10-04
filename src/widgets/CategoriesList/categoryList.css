@@ -1,0 +1,34 @@
+
+.categoryList{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    /* padding: 0px 256px; */
+    padding-top: 64px;
+    background-color: white;
+}
+.categoryList a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    flex: 1;
+    background-color: white;
+    
+}
+.categoryList a img{
+    width: 64px;
+    /* height: 100px; */
+}
+.floatingMenu{
+    width: 200px;
+    height: 200px;
+    background-color : cadetblue;
+    position: fixed;
+    z-index: 2;
+}

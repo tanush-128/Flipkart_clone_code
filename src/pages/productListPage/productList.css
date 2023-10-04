@@ -1,0 +1,44 @@
+.ProductListBody{
+    display: flex;
+
+    
+
+}
+
+
+.filters{
+   
+    width: 256px;
+    height: 1200px;
+    background-color: white;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    /* position: fixed; */
+
+}
+.productList{
+    width: 100%;
+    /* float: ; */
+    margin: 16px;
+    border-radius: 12px;
+    background-color: white;
+
+    display : flex;
+    flex-direction: column;
+
+
+}
+.price{
+    border-bottom: #F0F0F0 1px solid;
+    padding: 16px;
+    font-weight: 600;
+
+}
+
+.price-range{
+    display: flex;
+    justify-content: space-between;
+}
